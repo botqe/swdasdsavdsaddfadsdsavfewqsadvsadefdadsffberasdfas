@@ -1,0 +1,562 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local BOS = Instance.new("TextLabel")
+local DAHOOD = Instance.new("TextLabel")
+local BEDWARS = Instance.new("TextLabel")
+local ARSENAL = Instance.new("TextLabel")
+local ARA1 = Instance.new("TextLabel")
+local ARA2 = Instance.new("TextLabel")
+local ARA3 = Instance.new("TextLabel")
+local RAYX = Instance.new("TextButton")
+local CRASH = Instance.new("TextButton")
+local DESTINY = Instance.new("TextButton")
+local VAPEV4 = Instance.new("TextButton")
+local COM = Instance.new("TextButton")
+local AMBOT = Instance.new("TextButton")
+local OWLHUB = Instance.new("TextButton")
+local COM2 = Instance.new("TextButton")
+local DARKHUB = Instance.new("TextButton")
+local NATOX = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.17639257, 0, 0.178192854, 0)
+main.Size = UDim2.new(0, 592, 0, 360)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+BOS.Name = "BOS"
+BOS.Parent = main
+BOS.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+BOS.BorderColor3 = Color3.fromRGB(53, 53, 53)
+BOS.Size = UDim2.new(0, 592, 0, 50)
+BOS.Font = Enum.Font.SourceSans
+BOS.Text = ""
+BOS.TextColor3 = Color3.fromRGB(255, 255, 255)
+BOS.TextScaled = true
+BOS.TextSize = 25.000
+BOS.TextWrapped = true
+
+DAHOOD.Name = "DA HOOD"
+DAHOOD.Parent = main
+DAHOOD.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+DAHOOD.BorderColor3 = Color3.fromRGB(53, 53, 53)
+DAHOOD.Position = UDim2.new(0, 0, 0.138888896, 0)
+DAHOOD.Size = UDim2.new(0, 200, 0, 50)
+DAHOOD.Font = Enum.Font.GothamBold
+DAHOOD.Text = "DA HOOD"
+DAHOOD.TextColor3 = Color3.fromRGB(255, 255, 255)
+DAHOOD.TextSize = 25.000
+DAHOOD.TextWrapped = true
+
+BEDWARS.Name = "BED WARS"
+BEDWARS.Parent = main
+BEDWARS.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+BEDWARS.BorderColor3 = Color3.fromRGB(53, 53, 53)
+BEDWARS.Position = UDim2.new(0.337837845, 0, 0.138888896, 0)
+BEDWARS.Size = UDim2.new(0, 200, 0, 50)
+BEDWARS.Font = Enum.Font.GothamBold
+BEDWARS.Text = "BED WARS"
+BEDWARS.TextColor3 = Color3.fromRGB(255, 255, 255)
+BEDWARS.TextSize = 25.000
+BEDWARS.TextWrapped = true
+
+ARSENAL.Name = "ARSENAL"
+ARSENAL.Parent = main
+ARSENAL.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+ARSENAL.BorderColor3 = Color3.fromRGB(53, 53, 53)
+ARSENAL.Position = UDim2.new(0.662162185, 0, 0.138888896, 0)
+ARSENAL.Size = UDim2.new(0, 200, 0, 50)
+ARSENAL.Font = Enum.Font.GothamBold
+ARSENAL.Text = "ARSENAL"
+ARSENAL.TextColor3 = Color3.fromRGB(255, 255, 255)
+ARSENAL.TextSize = 25.000
+ARSENAL.TextWrapped = true
+
+ARA1.Name = "ARA1"
+ARA1.Parent = main
+ARA1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARA1.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ARA1.Position = UDim2.new(0, 0, 0.138888896, 0)
+ARA1.Size = UDim2.new(0, 592, 0, 0)
+ARA1.Font = Enum.Font.SourceSans
+ARA1.Text = " "
+ARA1.TextColor3 = Color3.fromRGB(0, 0, 0)
+ARA1.TextSize = 14.000
+
+ARA2.Name = "ARA2"
+ARA2.Parent = main
+ARA2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARA2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ARA2.Position = UDim2.new(0.326013505, 0, 0.138888896, 0)
+ARA2.Size = UDim2.new(0, 0, 0, 310)
+ARA2.Font = Enum.Font.SourceSans
+ARA2.Text = ""
+ARA2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ARA2.TextSize = 14.000
+
+ARA3.Name = "ARA3"
+ARA3.Parent = main
+ARA3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ARA3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ARA3.Position = UDim2.new(0.675675631, 0, 0.138888896, 0)
+ARA3.Size = UDim2.new(0, 0, 0, 310)
+ARA3.Font = Enum.Font.SourceSans
+ARA3.Text = ""
+ARA3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ARA3.TextSize = 14.000
+
+RAYX.Name = "RAY X"
+RAYX.Parent = main
+RAYX.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+RAYX.BorderColor3 = Color3.fromRGB(35, 35, 35)
+RAYX.Position = UDim2.new(0.0168918911, 0, 0.322222233, 0)
+RAYX.Size = UDim2.new(0, 169, 0, 50)
+RAYX.Font = Enum.Font.GothamBold
+RAYX.Text = "RAY X"
+RAYX.TextColor3 = Color3.fromRGB(255, 255, 255)
+RAYX.TextSize = 27.000
+RAYX.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/urmomugly/lua-project/main/Script%26/RAYXV001'))()
+end)
+
+
+CRASH.Name = "CRASH"
+CRASH.Parent = main
+CRASH.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CRASH.BorderColor3 = Color3.fromRGB(35, 35, 35)
+CRASH.Position = UDim2.new(0.0168918911, 0, 0.747222245, 0)
+CRASH.Size = UDim2.new(0, 169, 0, 50)
+CRASH.Font = Enum.Font.GothamBold
+CRASH.Text = "CRASH"
+CRASH.TextColor3 = Color3.fromRGB(255, 255, 255)
+CRASH.TextSize = 27.000
+CRASH.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/racemodex/my-scripts/master/dahoodcrash", true))()
+end)
+
+DESTINY.Name = "DESTINY"
+DESTINY.Parent = main
+DESTINY.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+DESTINY.BorderColor3 = Color3.fromRGB(35, 35, 35)
+DESTINY.Position = UDim2.new(0.0168918911, 0, 0.527777791, 0)
+DESTINY.Size = UDim2.new(0, 169, 0, 50)
+DESTINY.Font = Enum.Font.GothamBold
+DESTINY.Text = "DESTINY"
+DESTINY.TextColor3 = Color3.fromRGB(255, 255, 255)
+DESTINY.TextSize = 27.000
+DESTINY.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/compwnter/destiny/main/loader'))();
+end)
+
+VAPEV4.Name = "VAPE V4"
+VAPEV4.Parent = main
+VAPEV4.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+VAPEV4.BorderColor3 = Color3.fromRGB(35, 35, 35)
+VAPEV4.Position = UDim2.new(0.36317569, 0, 0.322222233, 0)
+VAPEV4.Size = UDim2.new(0, 169, 0, 50)
+VAPEV4.Font = Enum.Font.GothamBold
+VAPEV4.Text = "VAPE V4"
+VAPEV4.TextColor3 = Color3.fromRGB(255, 255, 255)
+VAPEV4.TextSize = 27.000
+VAPEV4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+COM.Name = "COM"
+COM.Parent = main
+COM.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+COM.BorderColor3 = Color3.fromRGB(35, 35, 35)
+COM.Position = UDim2.new(0.36317569, 0, 0.747222245, 0)
+COM.Size = UDim2.new(0, 169, 0, 50)
+COM.Font = Enum.Font.GothamBold
+COM.Text = "COMING SOON"
+COM.TextColor3 = Color3.fromRGB(255, 255, 255)
+COM.TextSize = 23.000
+
+AMBOT.Name = "A�MBOT"
+AMBOT.Parent = main
+AMBOT.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+AMBOT.BorderColor3 = Color3.fromRGB(35, 35, 35)
+AMBOT.Position = UDim2.new(0.36317569, 0, 0.527777791, 0)
+AMBOT.Size = UDim2.new(0, 169, 0, 50)
+AMBOT.Font = Enum.Font.GothamBold
+AMBOT.Text = "AIM BOT"
+AMBOT.TextColor3 = Color3.fromRGB(255, 255, 255)
+AMBOT.TextSize = 27.000
+
+OWLHUB.Name = "OWL HUB"
+OWLHUB.Parent = main
+OWLHUB.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+OWLHUB.BorderColor3 = Color3.fromRGB(35, 35, 35)
+OWLHUB.Position = UDim2.new(0.69932431, 0, 0.322222233, 0)
+OWLHUB.Size = UDim2.new(0, 169, 0, 50)
+OWLHUB.Font = Enum.Font.GothamBold
+OWLHUB.Text = "OWL HUB"
+OWLHUB.TextColor3 = Color3.fromRGB(255, 255, 255)
+OWLHUB.TextSize = 27.000
+OWLHUB.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+COM2.Name = "COM2"
+COM2.Parent = main
+COM2.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+COM2.BorderColor3 = Color3.fromRGB(35, 35, 35)
+COM2.Position = UDim2.new(0.69932431, 0, 0.747222245, 0)
+COM2.Size = UDim2.new(0, 169, 0, 50)
+COM2.Font = Enum.Font.GothamBold
+COM2.Text = "COMING SOON"
+COM2.TextColor3 = Color3.fromRGB(255, 255, 255)
+COM2.TextSize = 23.000
+
+DARKHUB.Name = "DARK HUB"
+DARKHUB.Parent = main
+DARKHUB.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+DARKHUB.BorderColor3 = Color3.fromRGB(35, 35, 35)
+DARKHUB.Position = UDim2.new(0.69932431, 0, 0.527777791, 0)
+DARKHUB.Size = UDim2.new(0, 169, 0, 50)
+DARKHUB.Font = Enum.Font.GothamBold
+DARKHUB.Text = "DARK HUB"
+DARKHUB.TextColor3 = Color3.fromRGB(255, 255, 255)
+DARKHUB.TextSize = 27.000
+DARKHUB.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
+end)
+
+NATOX.Name = "NATO X"
+NATOX.Parent = main
+NATOX.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+NATOX.BackgroundTransparency = 1.000
+NATOX.BorderColor3 = Color3.fromRGB(53, 53, 53)
+NATOX.Position = UDim2.new(-0.000945399981, 0, -0.000323906541, 0)
+NATOX.Size = UDim2.new(0, 596, 0, 50)
+NATOX.Font = Enum.Font.SourceSans
+NATOX.Text = "NATO X"
+NATOX.TextColor3 = Color3.fromRGB(255, 255, 255)
+NATOX.TextScaled = true
+NATOX.TextSize = 25.000
+NATOX.TextWrapped = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+close.BorderColor3 = Color3.fromRGB(53, 53, 53)
+close.Position = UDim2.new(0.905405402, 0, 0, 0)
+close.Size = UDim2.new(0, 56, 0, 46)
+close.Font = Enum.Font.GothamBold
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextSize = 27.000
+close.MouseButton1Down:connect(function()
+main.Visible = false
+openmain.Visible = true	
+end)
+
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+openmain.BorderColor3 = Color3.fromRGB(53, 53, 53)
+openmain.Position = UDim2.new(0.00928381924, 0, 0.476779401, 0)
+openmain.Size = UDim2.new(0, 100, 0, 24)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+open.BorderColor3 = Color3.fromRGB(53, 53, 53)
+open.Size = UDim2.new(0, 100, 0, 23)
+open.Font = Enum.Font.GothamBold
+open.Text = "OPEN"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextSize = 20.000
+open.MouseButton1Down:connect(function()
+openmain.Visible = false
+main.Visible = true
+end)
+
+-- Scripts:
+
+local function BEFAHI_fake_script() -- DAHOOD.LocalScript 
+	local script = Instance.new('LocalScript', DAHOOD)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(BEFAHI_fake_script)()
+local function MEVDKE_fake_script() -- BEDWARS.LocalScript 
+	local script = Instance.new('LocalScript', BEDWARS)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(MEVDKE_fake_script)()
+local function ZPJWWOB_fake_script() -- ARSENAL.LocalScript 
+	local script = Instance.new('LocalScript', ARSENAL)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(ZPJWWOB_fake_script)()
+local function EPCNQK_fake_script() -- RAYX.LocalScript 
+	local script = Instance.new('LocalScript', RAYX)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(EPCNQK_fake_script)()
+local function ONZQ_fake_script() -- CRASH.LocalScript 
+	local script = Instance.new('LocalScript', CRASH)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(ONZQ_fake_script)()
+local function DNSQNMW_fake_script() -- DESTINY.LocalScript 
+	local script = Instance.new('LocalScript', DESTINY)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(DNSQNMW_fake_script)()
+local function MZFC_fake_script() -- VAPEV4.LocalScript 
+	local script = Instance.new('LocalScript', VAPEV4)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(MZFC_fake_script)()
+local function ZDDWRF_fake_script() -- COM.LocalScript 
+	local script = Instance.new('LocalScript', COM)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(ZDDWRF_fake_script)()
+local function MHJHGF_fake_script() -- AMBOT.LocalScript 
+	local script = Instance.new('LocalScript', AMBOT)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(MHJHGF_fake_script)()
+local function LYGNZ_fake_script() -- OWLHUB.LocalScript 
+	local script = Instance.new('LocalScript', OWLHUB)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(LYGNZ_fake_script)()
+local function ABTA_fake_script() -- COM2.LocalScript 
+	local script = Instance.new('LocalScript', COM2)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(ABTA_fake_script)()
+local function QIJW_fake_script() -- DARKHUB.LocalScript 
+	local script = Instance.new('LocalScript', DARKHUB)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(QIJW_fake_script)()
+local function HJPGSV_fake_script() -- NATOX.LocalScript 
+	local script = Instance.new('LocalScript', NATOX)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(HJPGSV_fake_script)()
+local function DNWTJ_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	while true do
+		script.Parent.TextColor3 = Color3.new (0, 170, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (85, 255, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 85, 0)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (255, 0, 255)
+		Wait(5)
+		script.Parent.TextColor3 = Color3.new (0, 0, 127)
+		Wait(5)
+	end
+end
+coroutine.wrap(DNWTJ_fake_script)()
